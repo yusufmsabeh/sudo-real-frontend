@@ -1,0 +1,50 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Lexend Deca", sans-serif;
+  height: 100%;
+}
+html{
+  height: 100%;
+}
+
+.primary-button {
+  background-color: #5664f5;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.primary-button:hover {
+  background-color: #293bfc;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 48rem) {
+  footer {
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 30rem) {
+  footer {
+    font-size: 0.75rem;
+    padding: 0.8rem;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}

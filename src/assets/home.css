@@ -1,0 +1,92 @@
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+}
+.input {
+  background-color: #f0f0f0;
+}
+.output {
+  background-color: #e0e0e0;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: 40rem;
+  min-height: 23rem;
+}
+.box form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.box form select {
+  padding: 0.8rem 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  background-image: url("arrow_drop_down_24dp_EA3323_FILL0_wght400_GRAD0_opsz24.svg");
+  background-repeat: no-repeat;
+  background-size: 1.2rem 1.2rem;
+  background-position: calc(100% - 16px);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.box form select:focus {
+  border: none;
+}
+.box form textarea {
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem;
+  resize: vertical;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+}
+.buttons * {
+  width: 100%;
+}
+
+.box-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 48rem) {
+  main {
+    flex-direction: column;
+    padding: 0.1rem;
+    padding-top: 1rem;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  .box {
+    width: 90%;
+    padding: 0.5rem;
+  }
+}
+@media screen and (max-width: 45rem) {
+}
+@media screen and (max-width: 30rem) {
+}
+
+@media screen and (max-width: 20rem) {
+}
